@@ -1,24 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Transition</title
+        <title>Transition</title>
         <style>
-            *{
-              margin: 10px;  
-              padding: 30px;
+            *{  
+              padding: 20px;
               font-family: fantasy;
             }
-            div{
+            body{
+                border: 20px;
+                background-color: burlywood;
+            }
+            .one{
                 border: 2px black solid;
-                width: 200px;
+                width: 100px;
                 height: 200px;
                 background-color: pink;
+                transition: width 1s .5s ease-in-out;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                transform: rotate(0deg)
+                
+            }
+            .two{
+                border: 2px black solid;
+                width: 100px;
+                height: 200px;
+                background-color:plum;
+                transition: width 2s .5s ease-in-out;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 20px;
+                margin-bottom: 20px;
+            }
+            .three{
+                border: 2px black solid;
+                width: 100px;
+                height: 200px;
+                background-color: palegreen;
+                transition: width 3s .5s ease-in-out;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .one:hover{
+                width: 400px;
+                height: 200px;
+                cursor: pointer;
+                border-radius: 20px;
+                transform: rotateX(20deg)
+            }
+            .one:active{
+                color: red;
+                background-color: rosybrown;
+            }
+            .two:active{
+                color: green;
+                background-color: white;
+            }
+            .three:active{
+                color: orange;
+                background-color: blueviolet;
+            }
+            .two:hover{
+                width: 400px;
+                height: 200px;
+                cursor: pointer;
+                border-radius: 20px;
+                transform: rotateY(20deg)
+            }
+            .three:hover{
+                width: 400px;
+                height: 200px;
+                cursor: pointer;
+                border-radius: 20px;
+                transform: rotateX(20deg);
             }
         </style>
     </head>
     <body>
-        <div>
-            one
+        <h1>CSS Transition and Transform</h1>
+        <div class="one">
+            <h1>CSS</h1>
+        </div>
+        <div class="two">
+            <h1>HTML</h1>
+        </div>
+        <div class="three">
+            <h1>Java Script</h1>
         </div>
     </body>
 </html>
